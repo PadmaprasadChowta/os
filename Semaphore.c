@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 
 int mutex = 1, full = 0, empty = 3, x = 0;
@@ -64,3 +65,39 @@ void consumer() {
     x--;
     mutex = signal(mutex);
 }
+// 1. Producer
+// 2. Consumer
+// 3. Exit
+
+// Enter your choice: 1
+
+// Producer produces item 1
+
+// Enter your choice: 1
+
+// Producer produces item 2
+
+// Enter your choice: 1
+
+// Producer produces item 3
+
+// Enter your choice: 1
+// Buffer is full!
+
+// Enter your choice: 2
+
+// Consumer consumes item 3
+
+// Enter your choice: 2
+
+// Consumer consumes item 2
+
+// Enter your choice: 2
+
+// Consumer consumes item 1
+
+// Enter your choice: 2
+// Buffer is empty!
+
+// Enter your choice: 3
+// [1] + Done         
